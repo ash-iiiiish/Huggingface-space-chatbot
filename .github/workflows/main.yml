@@ -18,14 +18,14 @@ jobs:
       - name: Set up git
         run: |
           git config user.email "actions@github.com"
-          git config user.name "Github Actions"
+          git config user.name "GitHub Actions"
 
       - name: Pull latest changes from Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote add space https://129Ashish:$HF_TOKEN@huggingface.co/spaces/129Ashish/Groq-Chatbot-Query-App main
-          git fetch space main 
+          git remote add space https://129Ashish:$HF_TOKEN@huggingface.co/spaces/129Ashish/Groq-Chatbot-Query-App
+          git fetch space main
           git merge space/main --allow-unrelated-histories --strategy-option=theirs
 
       - name: Push to hub
@@ -33,4 +33,3 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           git push https://129Ashish:$HF_TOKEN@huggingface.co/spaces/129Ashish/Groq-Chatbot-Query-App main
-          
