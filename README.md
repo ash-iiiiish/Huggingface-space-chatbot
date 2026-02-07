@@ -1,7 +1,7 @@
 # HuggingFace-Space-Chatbot
 Deployment of Chatbots using HuggingFacespaces
 
-- Deployed Link: https://huggingface.co/spaces/129Ashish/Groq-Chatbot-Query-App
+<!--- Deployed Link: https://huggingface.co/spaces/129Ashish/Groq-Chatbot-Query-App-->
 
 
 ![demo](images/image.png)
